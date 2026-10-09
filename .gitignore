@@ -24,3 +24,12 @@ dist-ssr
 *.sw?
 
 .env
+
+# Terraform local state, cache and variable files
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.*
+infra/crash.log
+infra/crash.*.log
+infra/*.tfvars
+infra/*.tfvars.json
